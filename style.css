@@ -1,0 +1,70 @@
+:root{
+    --c1: #7D0A0A;
+    --c2: #BF3131;
+    --c3: #EAD196;
+    --c4: #F3EDC8;
+    --c5: #1D2B53;
+    
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Salsa;
+    src: url(assets/fonts/Salsa-Regular.ttf);
+}
+
+/*BUILTIN*/
+
+h1{
+    color: var(--c4);
+
+    font-family: Salsa;
+
+    text-align: center;
+
+    background-color: var(--c1);
+}
+
+h2{
+    color: var(--c3);
+
+    font-family: Salsa;
+}
+
+p{
+    color: var(--c5);
+
+    font-family: Montserrat;
+}
+
+body{
+    background-color: var(--c2);
+}
+
+/*IDS*/
+
+#title{
+    border-style: dashed;
+    border-color: var(--c2);
+    border-width: 4px;
+}
+
+#boxLeft{
+    background-color: var(--c1);
+
+    float: left;
+
+    padding: 32px;
+
+    border-style: dashed;
+    border-color: var(--c2);
+    border-width: 4px;
+}
+
+#boxRight{
+    padding: 32px;
+}
