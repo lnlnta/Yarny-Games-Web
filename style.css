@@ -51,6 +51,9 @@ body{
     border-style: dashed;
     border-color: var(--c2);
     border-width: 4px;
+
+    margin-left: 20%;
+    margin-right: 20%
 }
 
 #boxLeft{
