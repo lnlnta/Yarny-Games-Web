@@ -8,32 +8,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yarny Games</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/logos/YGPng.png">
 
 </head>
 
 <body>
 
-    <h1 id="title">Yarny Games</h1>
+    <div id="title"">
+        
+        <img class="titleLogo" height="96px" src="assets/logos/YGPng.png" alt="">
+        <h1>Yarny Games</h1>
+    
+    </div>
 
-    <!--Box Left-->
+    <!---------------->
+
+    <!---------------->
+    <!--    INDEX   -->
+    <!---------------->
+
     <div id="boxLeft" id="box">
 
-        <img height="96px" src="assets/logos/YGWhite.png" alt="">
+        <img height="96px" src="assets/logos/YGPng.png" alt="">
 
         <h2>Index</h2>
 
+        <a class="listItem" href="#who">Who are we</a>
+        <a class="listItem" href="#projects">Projects</a>
+        <a class="listItem" href="#contact">Contact</a>
+
     </div>
 
-    <!--Box Right-->
+    <!---------------->
+
+    <!---------------->
+    <!--HELPING HANDS->
+    <!---------------->
     <div id="boxRight" id="box">
 
-        <h2>WIP</h2>
+        <img height="96px" src="assets/icons/like.png" alt="">
+
+        <h2>Helping Hands</h2>
+
+        <a target="_blank" class="listItem" href="https://rackgames.vercel.app/">Rack Games</a>
 
     </div>
 
+    <!---------------->
 
-    <!--Box Mid-->
-    <div id="boxMid">
+    <!---------------->
+    <!-- WHO ARE WE -->
+    <!---------------->
+
+    <div class="boxMid" id="who">
 
         <h2>Who are we?</h2>
 
@@ -43,7 +70,13 @@
 
     </div>
 
-    <div id="boxMid">
+    <!---------------->
+
+    <!---------------->
+    <!--OUR PROJECTS-->
+    <!---------------->
+
+    <div class="boxMid" id="projects">
 
         <h2>Our Projects</h2>
 
@@ -53,19 +86,35 @@
         
         <div class="project">
             <a href="https://helpingani.neocities.org/" target="_blank">
+                <h5>Provisional cover art</h5>
                 <img class="projectImg" src="assets/projects/helpingani.png" alt="">
-                <p>Helping Ani</p>
-                <p>WIP</p>
+                <p class="projectName">Helping Ani</p>
+                <h5 class="projectState">In Development</h5>
             </a>
-        </div>
-        
-        <div class="project">
-            <img class="projectImg" src="assets/projects/helpingani.png" alt="">
-            <p>Sebun</p>
-            <p>WIP</p>
         </div>
 
     </div>
+
+    <!---------------->
+
+    <!---------------->
+    <!--  CONTACT   -->
+    <!---------------->
+
+    <div class="boxMid" id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+           Here are our social media and ways you can contact us.
+        </p>
+        
+        <a target="_blank" href="https://twitter.com/yarnygames"><img class="socialLogo" width="64px" src="assets/social/x.png" alt=""></a>
+        <a target="_blank" href="mailto:yarnygames@gmail.com"><img class="socialLogo" width="64px" src="assets/social/mail.png" alt=""></a>
+
+    </div>
+
+    <!---------------->
 
 </body>
 

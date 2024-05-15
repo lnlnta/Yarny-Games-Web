@@ -5,6 +5,7 @@
     --c4: #F3EDC8;
     --c5: #1D2B53;
     
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -18,6 +19,10 @@
 }
 
 /*BUILTIN*/
+
+body{
+    background-image: linear-gradient(var(--c1), var(--c2));
+}
 
 h1{
     color: var(--c4);
@@ -41,10 +46,6 @@ p{
     font-family: Montserrat;
 }
 
-body{
-    background-color: var(--c2);
-}
-
 a{
     color: var(--c3);
 }
@@ -52,12 +53,15 @@ a{
 /*IDS*/
 
 #title{
+    background-color: var(--c1);
+
     border-style: dashed;
-    border-color: var(--c2);
+    border-color: var(--c3);
     border-width: 4px;
 
-    margin-left: 40%;
-    margin-right: 40%
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 32px;
 }
 
 #boxLeft{
@@ -65,37 +69,18 @@ a{
 
     float: left;
 
+    position: fixed;
+
     padding: 32px;
 
     border-style: dashed;
-    border-color: var(--c2);
+    border-color: var(--c3);
     border-width: 4px;
 
     margin-left: 2em;
+    margin-top: -206px;
 
     width: 6em;
-
-    text-align: center;
-}
-
-#boxMid{
-    /*padding: 32px;*/
-    background-color: var(--c1);
-
-    float: center;
-
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-
-    border-style: dashed;
-    border-color: var(--c2);
-    border-width: 4px;
-
-    margin-left: 14em;
-    margin-right: 14em;
-    margin-bottom: 2em;
 
     text-align: center;
 }
@@ -108,7 +93,7 @@ a{
     padding: 32px;
 
     border-style: dashed;
-    border-color: var(--c2);
+    border-color: var(--c3);
     border-width: 4px;
 
     width: 6em;
@@ -118,14 +103,63 @@ a{
     text-align: center;
 }
 
-.project{
-    float: center;
-    display: inline-block;
+#boxContact{
+    min-height: 256px;
 }
-.project:hover{
 
+/*CLASSES*/
+
+.project{
+    display: inline-block;
 }
 
 .projectImg{
     width: 192px;
+}
+
+.projectState{
+    margin-top: -16px;
+    font-style: italic;
+}
+
+.projectName{
+    font-weight: bold;
+}
+
+.socialLogo:hover{
+    width: 70px;
+}
+
+.boxMid{
+    /*padding: 32px;*/
+    background-color: var(--c1);
+
+    float: center;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    border-style: dashed;
+    border-color: var(--c3);
+    border-width: 4px;
+
+    margin-left: 14em;
+    margin-right: 14em;
+    margin-bottom: 2em;
+
+    text-align: center;
+}
+
+.listItem:hover{
+    font-weight: bold;
+}
+
+.titleLogo{
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
 }
